@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    </head>
+    <body>
+        <div class="container home-page">
+            <div class="navigation-container">
+                <div class="navigation">
+                    <div class="logo">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <div class="home-link">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="profile-container">
+                        <div class="profile">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+              <div class="tweets-search-container">
+                 <input type="text" placeholder="Search twitter" id="user-search-input" onkeyup="onEnter(event)">
+                 <i class="fas fa-search fa-flip-horizontal" onclick="getTwitterData()"></i>
+              </div>
+              <div class="tweet-list">
+                  <div class="welcome-Message">
+                      <h5>Welcome to twitter</h5>
+                      <p>Use Twitter to find what is happening around the world.</p>
+                  </div>
+              </div>
+              <div class="next-page-container" id="next-Page-Id">
+                  <i class="fas fa-arrow-down" onclick="onNext()"></i>
+              </div>
+            </div>
+            <div class="tweet-sidebar-container">
+                <div class="tweets-sidebar">
+                    <div class="tweet-trending">
+                        <h5>Trends for You</h5>
+                        <ul>
+                            <li onclick="selectTrend(this)">#Coding</li>
+                            <li onclick="selectTrend(this)">#Programming-humour</li>
+                            <li onclick="selectTrend(this)">#JavaScript</li>
+                            <li onclick="selectTrend(this)">#Python</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="js/index.js" async defer></script>
+    </body>
+</html>
