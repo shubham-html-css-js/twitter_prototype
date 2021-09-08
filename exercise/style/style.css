@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #0f0f11;
+    overflow: auto;
+}
+
+.navigation-container
+{
+    width:20%;
+    max-width: 100px;
+    min-width: 70px;
+    border: 1px solid #1C1C1C;
+}
+.main
+{
+    width: 60%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-sidebar-container
+{  display: flex;
+    flex:1;
+}
+
+.tweets-search-container
+{
+    margin: 20px;
+    border-bottom: 1px solid white;
+}
+
+.tweet-list
+{
+    margin: 20px;
+    margin-top: 0px;
+}
+
+.tweet-container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: white;
+    margin: 10px;
+}
+
+.tweets-sidebar
+{
+    width: 300px;
+    height: 500px;
+    background-color: white;
+    border-radius: 40px;
+    margin-top: 30px;
+    position: fixed;
+}
+.navigation
+{
+    color: white;
+    margin-top: 30px;
+    position: fixed;
+    max-width: 100px;
+    min-width: 70px;
+    width:20%;
+}
+
+.logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.home-link
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-right: 3px solid #00ADFF;
+    color: #00ADFF;
+}
+.profile-container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.profile
+{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+
+div i
+{
+    font-size: 30px;
+}
+.tweets-search-container
+{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+input
+{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+input:focus
+{
+    outline: none;
+}
+.fa-search
+{
+    color: white;
+    font-size: 25px;
+    padding-right: 10px;
+}
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #0f0f11;
+    margin: 0px;
+    height: auto;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.tweet-images-container
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.tweet-text-container
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.74);
+    
+}
+.tweet-date
+{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color:#475250;
+    font-size: 10px;
+}
+.tweet-user-info
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.tweet-user-profile
+{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #1C1C1C;
+    border-radius: 50%;
+    background-color: white;
+
+}
+.tweet-user-fullname
+{
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.tweet-user-username
+{
+    font-size: 8px;
+    margin-left: 10px;
+}
+
+.tweet-trending
+{
+    height: 200px;
+    background-color: #f2f2f2;
+    margin:10px;
+    border-radius: 40px;
+    padding-top:20px;
+ 
+}
+.tweets-sidebar
+{
+    overflow: hidden;
+}
+
+h5
+{
+    font-size: 12px;
+    color:#848586;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+ul
+{
+    padding:0;
+    margin: 0;
+    list-style: none;
+}
+ul li
+{
+    font-size:20px;
+    color: #A5A5A6;
+    border-top:1px solid #D8D8D8;
+    padding-top:8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.tweet-images-container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tweet-image
+{
+    background-size: cover;
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+.tweet-image img
+{
+    background-position: cover;
+}
+.tweet-videos-container
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    border: 1px solid #1C1C1C;
+    border-radius: 20px;
+    overflow: hidden;
+}
+video
+{
+    width: 100%;
+    height: 100%;
+}
+.next-page-container
+{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#475250;
+    border: 1px solid #1C1C1C;
+    border-radius: 8px;
+    visibility: hidden;
+}
+
+.next-page-container:hover
+{
+    background-color: #1C1C1C
+}
+
+.welcome-Message
+{
+    text-align: center;
+    color: white;
+}
+
+.welcome-Message h5
+{
+    margin-bottom: 0px;
+}
+
+.welcome-Message p
+{
+    font-size: 10px;
+}
